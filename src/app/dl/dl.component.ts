@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DlService } from '../dl.service';
 import { MatSnackBar } from '@angular/material';
-import { ok } from 'assert';
+
 
 @Component({
   selector: 'app-dl',
@@ -10,17 +10,21 @@ import { ok } from 'assert';
 })
 export class DlComponent implements OnInit {
   // address = {}
-  showFiller = false;
+
+  success: number;
   constructor(
     private dlSercice: DlService,
     public snackBar: MatSnackBar) { }
 
   ngOnInit() {
+    this.success = 0;
   }
 
   getAddress(addrss): void {
+    this.success = 1;
     this.dlSercice.getAddress(addrss)
-      .subscribe(()=>{
+      .subscribe(() => {
+        this.success = 2
         this.snackBar.openFromComponent(PizzaPartyComponent, {
           duration: 500,
         });
@@ -37,4 +41,4 @@ export class DlComponent implements OnInit {
     }
   `],
 })
-export class PizzaPartyComponent {}
+export class PizzaPartyComponent { }

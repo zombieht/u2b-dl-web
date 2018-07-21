@@ -21,10 +21,11 @@
 </label>
 
 </div> -->
-
 <form class="example-form">
   <mat-form-field class="example-full-width">
     <input matInput [(ngModel)]="address" placeholder="address" name="address">
   </mat-form-field>
-  <button class="button" type="button" mat-raised-button color="primary" (click)="getAddress(address)">go</button>
+  <button *ngIf="success != 1"  class="button" type="button" mat-raised-button color="primary" (click)="getAddress(address)">go</button>
 </form>
+<!-- <div *ngIf="success == 1" class="cycle">  <mat-spinner  [diameter] = 30> </mat-spinner></div> -->
+
