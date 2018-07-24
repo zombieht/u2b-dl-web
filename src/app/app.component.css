@@ -25,6 +25,10 @@ mat-toolbar-row {
   text-align:center;
 }
 
+button{
+  font-weight: bold;
+}
+
 .fly {
   /* float: left; 
   display: block;  */
