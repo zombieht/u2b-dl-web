@@ -42,6 +42,7 @@ import {
   MatTooltipModule,
   MatTreeModule,
 } from '@angular/material';
+import {FlexLayoutModule} from '@angular/flex-layout';
 @NgModule({
   declarations: [
     AppComponent,
@@ -50,7 +51,7 @@ import {
   ],
   entryComponents: [PizzaPartyComponent],
   imports: [
-    BrowserModule, HttpClientModule, FormsModule, BrowserAnimationsModule,MatAutocompleteModule,
+    BrowserModule, HttpClientModule, FormsModule, BrowserAnimationsModule,MatAutocompleteModule,FlexLayoutModule,
     MatBadgeModule,
     MatBottomSheetModule,
     MatButtonModule,
