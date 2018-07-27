@@ -5,13 +5,18 @@
 
 <div>
   <div class="navbar">
-    <div class="fly" >
+    <div class="fly">
 
-      <button type="button" mat-button >
-        <span color="white">zombie.io</span>
-      </button>
-
-
+      <a mat-button href="https://github.com/zombieht" style="color: white;font-weight: bold;">
+        <span class="mat-button-wrapper">
+          <img class="docs-angular-logo" src="https://material.angular.io/assets/img/homepage/github-circle-white-transparent.svg"> GitHub
+        </span>
+      </a>
+     
+        <button mat-button style="position:absolute;right:20px;">
+          <span style="color: white">zombie.io</span>
+        </button>
+     
     </div>
   </div>
   <!-- <mat-menu x-position="before" #menu="matMenu">
@@ -25,11 +30,10 @@
     <button mat-raised-button color="primary">The</button>
     <button mat-raised-button color="accent">Buttons</button>
   </mat-card> -->
-
+  <div class="top"></div>
   <div class="dis">
     <app-dl></app-dl>
   </div>
-
   <!-- <span class="done">
     <button mat-fab>
       <mat-icon>check circle</mat-icon>

@@ -23,17 +23,17 @@
 </div> -->
 <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px">
 
-  <div>
+  <div >
     <form class="example-form">
       <mat-form-field class="example-full-width">
         <input matInput [(ngModel)]="address" placeholder="address" name="address">
       </mat-form-field>
     </form>
   </div>
-  <div *ngIf="success != 1" fxFlex="10" >
-    <button type="button" mat-raised-button color="primary" (click)="getAddress(address)">go</button>
+  <div *ngIf="success != 1" fxFlex="88px">
+    <button type="button" mat-raised-button color="primary" (click)="getAddress(address)" >go</button>
   </div>
-  <div *ngIf="success == 1" fxFlex="10" >
+  <div *ngIf="success == 1" fxFlex="88px">
     <mat-spinner [diameter]=30 class="center"> </mat-spinner>
   </div>
 
