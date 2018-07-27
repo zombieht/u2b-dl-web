@@ -9,7 +9,7 @@ import { MatSnackBar } from '@angular/material';
   styleUrls: ['./dl.component.css']
 })
 export class DlComponent implements OnInit {
-  // address = {}
+  address = "";
 
   success: number;
   constructor(
