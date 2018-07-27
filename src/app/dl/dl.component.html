@@ -21,7 +21,7 @@
 </label>
 
 </div> -->
-<div fxLayout="row" fxLayoutAlign="center center" >
+<div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px">
 
   <div>
     <form class="example-form">
@@ -30,11 +30,11 @@
       </mat-form-field>
     </form>
   </div>
-  <div *ngIf="success != 1" class="button">
+  <div *ngIf="success != 1" fxFlex="10" >
     <button type="button" mat-raised-button color="primary" (click)="getAddress(address)">go</button>
   </div>
-  <div *ngIf="success == 1" class="button">
-    <mat-spinner [diameter]=30> </mat-spinner>
+  <div *ngIf="success == 1" fxFlex="10" >
+    <mat-spinner [diameter]=30 class="center"> </mat-spinner>
   </div>
 
 </div>

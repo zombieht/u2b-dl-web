@@ -17,6 +17,11 @@
 
 .button {
   margin-left: 10px;
+  width: 5px;
+}
+
+.center {
+  margin: 0 auto;
 }
 
 /* div.container {
