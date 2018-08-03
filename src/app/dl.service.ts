@@ -11,7 +11,7 @@ const httpOptions = {
 })
 export class DlService {
   private url = '/api/post'
-
+  private doc = '/api/get'
   constructor(private http: HttpClient) { }
 
   getAddress(address: any): Observable<any> {
@@ -20,8 +20,15 @@ export class DlService {
     }
     return this.http.post(this.url, rq, httpOptions).pipe(
 
-      catchError(this.handleError<any>('updateHero'))
+      catchError(this.handleError<any>('post'))
     );
+  }
+
+  getDocument(): Observable<any>{
+    return this.http.get(this.doc, httpOptions).pipe(
+      catchError(this.handleError<any>('get'))
+    );
+
   }
 
   private handleError<T>(operation = 'operation', result?: T) {

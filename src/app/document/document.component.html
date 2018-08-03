@@ -1,0 +1,14 @@
+<div style="height:30px"></div>
+<div fxLayout="row" fxLayoutAlign="center" >
+  <mat-card >
+    <mat-list>
+      <mat-list-item *ngFor="let note of document">
+        <mat-icon mat-list-icon>note</mat-icon>
+        <h4 mat-line>{{note.name}}</h4>
+        <p mat-line>{{note.path}}</p>
+        <!-- <p mat-line> {{note.updated | date}} </p> -->
+      </mat-list-item>
+    </mat-list>
+
+  </mat-card>
+</div>

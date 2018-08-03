@@ -43,11 +43,13 @@ import {
   MatTreeModule,
 } from '@angular/material';
 import {FlexLayoutModule} from '@angular/flex-layout';
+import { DocumentComponent } from './document/document.component';
 @NgModule({
   declarations: [
     AppComponent,
     DlComponent,
     PizzaPartyComponent,
+    DocumentComponent,
   ],
   entryComponents: [PizzaPartyComponent],
   imports: [
